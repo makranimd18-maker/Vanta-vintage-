@@ -183,3 +183,30 @@ font-size:16px;
     text-decoration:none;
     border-radius:30px;
 }
+/* =========================
+   VANTA SHOP PAGE
+   ========================= */
+
+.shop-body {
+  background: #0d0d0d;
+  color: #f4f1eb;
+  font-family: "Inter", sans-serif;
+}
+
+/* NAVBAR */
+
+.shop-body .navbar {
+  width: 100%;
+  padding: 28px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.shop-body .logo {
+  color: #f4f1eb;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  font
