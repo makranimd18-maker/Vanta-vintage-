@@ -183,20 +183,3 @@ font-size:16px;
     text-decoration:none;
     border-radius:30px;
 }
-
-}
-.hero .btn{
-    display:inline-block;
-    padding:15px 40px;
-    background:#F5F1E8;
-    color:#111;
-    text-decoration:none;
-    border-radius:40px;
-    font-size:16px;
-    font-weight:600;
-    letter-spacing:0;
-    opacity:1;
-    visibility:visible;
-    width:auto;
-    height:auto;
-}
