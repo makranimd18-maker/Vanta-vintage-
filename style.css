@@ -1,253 +1,195 @@
-hi*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+/* =========================
+   VANTA — GLOBAL
+========================= */
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#111;
-    color:#F5F1E8;
-    font-family:'Inter',sans-serif;
-}
-
-.navbar{
-    position:fixed;
-    top:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:25px 8%;
-    background:rgba(0,0,0,.35);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-}
-
-.logo{
-    font-family:'Cormorant Garamond',serif;
-    font-size:38px;
-    letter-spacing:4px;
-}
-
-.nav-links{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:#F5F1E8;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#C9A66B;
-}
-
-.hero{
-    height:100vh;
-    background:url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80");
-    background-size:cover;
-    background-position:center;
-    position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.overlay{
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.55);
-}
-
-.hero-content{
-    position:relative;
-    text-align:center;
-    max-width:700px;
-    padding:20px;
-}
-
-.small-title{
-    letter-spacing:6px;
-    margin-bottom:20px;
-    color:#d7c6a3;
-}
-
-.hero h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:72px;
-    line-height:1.1;
-    margin-bottom:25px;
-}
-
-.hero-text{
-    font-size:18px;
-    color:#ddd;
-    margin-bottom:35px;
-}
-
-.btn{
-    display:inline-block;
-    padding:15px 40px;
-    background:#F5F1E8;
-    color:#111;
-    text-decoration:none;
-    border-radius:40px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#C9A66B;
-    transform:translateY(-3px);
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:48px;
-}
-
-.nav-links{
-display:none;
-}
-
-.logo{
-font-size:30px;
-}
-
-.hero-text{
-font-size:16px;
-}
-
-}
-/* update */
-.products{
-    padding:100px 8%;
-    background:#111;
-}
-
-.products h2{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:50px;
-    font-family:'Cormorant Garamond',serif;
-}
-
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:#1b1b1b;
-    border-radius:20px;
-    overflow:hidden;
-    transition:.4s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card img{
-    width:100%;
-    height:350px;
-    object-fit:cover;
-}
-
-.card h3{
-    padding:20px 20px 10px;
-    font-size:24px;
-}
-
-.card p{
-    padding:0 20px 20px;
-    color:#c9a66b;
-    font-size:20px;
-}
-
-.btn-small{
-    display:inline-block;
-    margin:0 20px 20px;
-    padding:12px 25px;
-    background:#c9a66b;
-    color:#111;
-    text-decoration:none;
-    border-radius:30px;
-}
-/  font-weight: 500;
-  letter-spacing: -2px;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.shop-body .shop-description {
-  max-width: 600px;
-  margin-top: 35px;
-  font-size: 18px;
-  line-height: 1.7;
-  font-weight: 300;
-  opacity: 0.65;
+html {
+  scroll-behavior: smooth;
 }
 
-/* COLLECTION */
-
-.shop-body .collection {
-  padding-bottom: 100px;
+body {
+  background: #111;
+  color: #f5f1e8;
+  font-family: "Inter", sans-serif;
 }
 
-.shop-body .collection-top {
+/* =========================
+   NAVBAR — HOME
+========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-  padding-bottom: 25px;
-  margin-bottom: 35px;
+  align-items: center;
+  padding: 25px 8%;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
-.shop-body .collection-top h2 {
+.logo {
   font-family: "Cormorant Garamond", serif;
-  font-size: 52px;
-  font-weight: 500;
-  margin: 0;
+  font-size: 38px;
+  letter-spacing: 4px;
+  color: #f5f1e8;
+  text-decoration: none;
 }
 
-.shop-body .collection-top > span {
-  font-size: 13px;
-  opacity: 0.5;
-}
-
-/* PRODUCT GRID */
-
-.shop-body .product-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.nav-links {
+  display: flex;
+  list-style: none;
   gap: 35px;
 }
 
-.shop-body .card {
-  background: #171717;
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 4px;
-  overflow: hidden;
-  padding: 0;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+.nav-links a {
+  text-decoration: none;
+  color: #f5f1e8;
+  transition: 0.3s;
 }
 
-.shop-body .card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255,255,255,0.22);
+.nav-links a:hover {
+  color: #c9a66b;
 }
+
 /* =========================
-   VANTA SHOP PAGE
-   ========================= */
+   HOME HERO
+========================= */
+
+.hero {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.small-title {
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  color: #d7c6a3;
+}
+
+.hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 72px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 35px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #f5f1e8;
+  color: #111;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c9a66b;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   HOME PRODUCTS
+========================= */
+
+.products {
+  padding: 100px 8%;
+  background: #111;
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #1b1b1b;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 20px 20px 10px;
+  font-size: 24px;
+}
+
+.card p {
+  padding: 0 20px 20px;
+  color: #c9a66b;
+  font-size: 20px;
+}
+
+.btn-small {
+  display: inline-block;
+  margin: 0 20px 20px;
+  padding: 12px 25px;
+  background: #c9a66b;
+  color: #111;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* ==================================================
+   SHOP PAGE
+================================================== */
 
 .shop-body {
   background: #0d0d0d;
@@ -256,7 +198,7 @@ font-size:16px;
   overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* SHOP NAVBAR */
 
 .shop-body .navbar {
   position: relative;
@@ -265,7 +207,8 @@ font-size:16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box;
+  background: transparent;
+  backdrop-filter: none;
 }
 
 .shop-body .logo {
@@ -293,7 +236,11 @@ font-size:16px;
   text-transform: uppercase;
 }
 
-/* SHOP PAGE */
+.shop-body .nav-links a:hover {
+  color: #c9a66b;
+}
+
+/* SHOP CONTAINER */
 
 .shop-body .shop-page {
   width: 90%;
@@ -301,7 +248,7 @@ font-size:16px;
   margin: 0 auto;
 }
 
-/* HERO */
+/* SHOP HERO */
 
 .shop-body .shop-hero {
   padding: 90px 0 100px;
@@ -345,7 +292,7 @@ font-size:16px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   padding-bottom: 25px;
   margin-bottom: 35px;
 }
@@ -362,7 +309,7 @@ font-size:16px;
   opacity: 0.5;
 }
 
-/* PRODUCT GRID */
+/* SHOP PRODUCT GRID */
 
 .shop-body .product-grid {
   display: grid;
@@ -370,12 +317,20 @@ font-size:16px;
   gap: 35px;
 }
 
+/* SHOP CARD */
+
 .shop-body .card {
   background: #171717;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 6px;
   overflow: hidden;
   padding: 0;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.shop-body .card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 /* PRODUCT IMAGE */
@@ -395,6 +350,8 @@ font-size:16px;
   display: block;
 }
 
+/* BADGE */
+
 .shop-body .badge {
   position: absolute;
   top: 18px;
@@ -406,6 +363,7 @@ font-size:16px;
   font-size: 9px;
   letter-spacing: 1.5px;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 /* PRODUCT INFO */
@@ -435,25 +393,31 @@ font-size:16px;
   font-size: 14px;
   margin: 0;
   opacity: 0.7;
+  color: #c9a66b;
 }
 
-/* VIEW BUTTON */
+/* VIEW PRODUCT */
 
 .shop-body .view-product {
   display: block;
   margin: 12px 22px 22px;
   padding-top: 14px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #f4f1eb;
   text-decoration: none;
   font-size: 11px;
   letter-spacing: 2px;
+  transition: 0.3s;
 }
 
-/* FOOTER */
+.shop-body .view-product:hover {
+  color: #c9a66b;
+}
+
+/* SHOP FOOTER */
 
 .shop-body .shop-footer {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 60px 5%;
   text-align: center;
 }
@@ -470,9 +434,41 @@ font-size:16px;
   letter-spacing: 1px;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 700px) {
+
+  .navbar {
+    padding: 22px 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .products {
+    padding: 70px 5%;
+  }
+
+  .products h2 {
+    font-size: 36px;
+  }
+
+  /* SHOP MOBILE */
 
   .shop-body .navbar {
     padding: 22px 5%;
