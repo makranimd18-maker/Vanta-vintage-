@@ -210,3 +210,129 @@ font-size:16px;
   font-family: "Cormorant Garamond", serif;
   font-size: 32px;
   font
+.shop-body .logo {
+  color: #f4f1eb;
+  text-decoration: none;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.shop-body .nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shop-body .nav-links a {
+  color: #f4f1eb;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* SHOP HERO */
+
+.shop-body .shop-page {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.shop-body .shop-hero {
+  padding: 90px 0 110px;
+  max-width: 850px;
+}
+
+.shop-body .shop-label,
+.shop-body .collection-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.55;
+  margin-bottom: 25px;
+}
+
+.shop-body .shop-hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(58px, 9vw, 110px);
+  line-height: 0.88;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin: 0;
+}
+
+.shop-body .shop-description {
+  max-width: 600px;
+  margin-top: 35px;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 300;
+  opacity: 0.65;
+}
+
+/* COLLECTION */
+
+.shop-body .collection {
+  padding-bottom: 100px;
+}
+
+.shop-body .collection-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+}
+
+.shop-body .collection-top h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 52px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.shop-body .collection-top > span {
+  font-size: 13px;
+  opacity: 0.5;
+}
+
+/* PRODUCT GRID */
+
+.shop-body .product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px;
+}
+
+.shop-body .card {
+  background: #171717;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.shop-body .card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,0.22);
+}
+
+/* PRODUCT IMAGE */
+
+.shop-body .product-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: #222;
+  overflow: hidden;
+}
+
+.shop-body .product-image img {
+  width:
