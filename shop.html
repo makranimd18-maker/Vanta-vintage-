@@ -228,3 +228,71 @@
 
 </body>
 </html>
+/* SHOP MOBILE FIX */
+
+.shop-body {
+  overflow-x: hidden;
+}
+
+.shop-body .navbar {
+  position: relative;
+}
+
+.shop-body .shop-page {
+  padding-top: 30px;
+}
+
+.shop-body .shop-hero {
+  padding-top: 70px;
+}
+
+.shop-body .shop-hero h1 {
+  max-width: 850px;
+}
+
+.shop-body .product-image {
+  position: relative;
+}
+
+.shop-body .product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.shop-body .badge {
+  white-space: nowrap;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .shop-body .shop-page {
+    width: 92%;
+  }
+
+  .shop-body .shop-hero {
+    padding: 55px 0 70px;
+  }
+
+  .shop-body .shop-hero h1 {
+    font-size: 54px;
+    line-height: 0.95;
+  }
+
+  .shop-body .shop-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .shop-body .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-body .product-image {
+    aspect-ratio: 4 / 5;
+  }
+
+}
