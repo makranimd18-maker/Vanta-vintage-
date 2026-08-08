@@ -6,6 +6,11 @@
 
   <title>VANTA | Shop</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../style.css">
 </head>
 
@@ -19,54 +24,205 @@
     <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
       <li><a href="shop.html">Shop</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
     </ul>
 
   </nav>
 </header>
 
+
 <main class="shop-page">
 
-  <div class="shop-heading">
-    <p>VANTA ARCHIVE</p>
-    <h1>Shop Collection</h1>
-    <span>Curated vintage pieces, one of a kind.</span>
-  </div>
+  <!-- SHOP INTRO -->
 
-  <div class="product-grid">
+  <section class="shop-hero">
 
-    <div class="card">
-      <img src="../assets/images/product1.jpg" alt="Vintage Hoodie">
-      <h3>Vintage Hoodie</h3>
-      <p>₹999</p>
-      <a href="#" class="btn-small">View</a>
+    <p class="shop-label">VANTA ARCHIVE / 01</p>
+
+    <h1>
+      Not made to<br>
+      follow trends.
+    </h1>
+
+    <p class="shop-description">
+      Curated vintage pieces with character,
+      history and a story of their own.
+    </p>
+
+  </section>
+
+
+  <!-- COLLECTION -->
+
+  <section class="collection">
+
+    <div class="collection-top">
+
+      <div>
+        <p class="collection-label">THE COLLECTION</p>
+        <h2>Latest Drop</h2>
+      </div>
+
+      <span>01 — 04</span>
+
     </div>
 
-    <div class="card">
-      <img src="../assets/images/product2.jpg" alt="Oversized Tee">
-      <h3>Oversized Tee</h3>
-      <p>₹799</p>
-      <a href="#" class="btn-small">View</a>
+
+    <div class="product-grid">
+
+
+      <!-- PRODUCT 01 -->
+
+      <article class="card">
+
+        <div class="product-image">
+
+          <span class="badge">ONE OF ONE</span>
+
+          <img
+            src="../assets/images/product1.jpg"
+            alt="Vintage Hoodie"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div>
+            <p class="product-number">01</p>
+            <h3>Vintage Hoodie</h3>
+          </div>
+
+          <p class="price">₹999</p>
+
+        </div>
+
+        <a href="#" class="view-product">
+          VIEW PIECE →
+        </a>
+
+      </article>
+
+
+      <!-- PRODUCT 02 -->
+
+      <article class="card">
+
+        <div class="product-image">
+
+          <span class="badge">CURATED</span>
+
+          <img
+            src="../assets/images/product2.jpg"
+            alt="Oversized Tee"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div>
+            <p class="product-number">02</p>
+            <h3>Oversized Tee</h3>
+          </div>
+
+          <p class="price">₹799</p>
+
+        </div>
+
+        <a href="#" class="view-product">
+          VIEW PIECE →
+        </a>
+
+      </article>
+
+
+      <!-- PRODUCT 03 -->
+
+      <article class="card">
+
+        <div class="product-image">
+
+          <span class="badge">VINTAGE</span>
+
+          <img
+            src="../assets/images/product3.jpg"
+            alt="Denim Jacket"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div>
+            <p class="product-number">03</p>
+            <h3>Denim Jacket</h3>
+          </div>
+
+          <p class="price">₹1499</p>
+
+        </div>
+
+        <a href="#" class="view-product">
+          VIEW PIECE →
+        </a>
+
+      </article>
+
+
+      <!-- PRODUCT 04 -->
+
+      <article class="card">
+
+        <div class="product-image">
+
+          <span class="badge">RARE FIND</span>
+
+          <img
+            src="../assets/images/product4.jpg"
+            alt="Vintage Cargo"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div>
+            <p class="product-number">04</p>
+            <h3>Vintage Cargo</h3>
+          </div>
+
+          <p class="price">₹1299</p>
+
+        </div>
+
+        <a href="#" class="view-product">
+          VIEW PIECE →
+        </a>
+
+      </article>
+
+
     </div>
 
-    <div class="card">
-      <img src="../assets/images/product3.jpg" alt="Denim Jacket">
-      <h3>Denim Jacket</h3>
-      <p>₹1499</p>
-      <a href="#" class="btn-small">View</a>
-    </div>
-
-    <div class="card">
-      <img src="../assets/images/product4.jpg" alt="Vintage Cargo">
-      <h3>Vintage Cargo</h3>
-      <p>₹1299</p>
-      <a href="#" class="btn-small">View</a>
-    </div>
-
-  </div>
+  </section>
 
 </main>
-<script src="../script.js"></script>
+
+
+<footer class="shop-footer">
+
+  <div class="footer-logo">
+    VANTA
+  </div>
+
+  <p>
+    Curated vintage. Nothing ordinary.
+  </p>
+
+</footer>
+
+
 </body>
 </html>
