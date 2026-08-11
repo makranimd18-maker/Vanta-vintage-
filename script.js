@@ -33,3 +33,27 @@ function changeProductImage(direction) {
 
   showProductImage(currentProductImage);
 }
+let touchStartX = 0;
+let touchEndX = 0;
+
+const productSlider = document.querySelector(".product-slider");
+
+if (productSlider) {
+  productSlider.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  productSlider.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) > 50) {
+      if (swipeDistance < 0) {
+        changeProductImage(1);
+      } else {
+        changeProductImage(-1);
+      }
+    }
+  });
+}
