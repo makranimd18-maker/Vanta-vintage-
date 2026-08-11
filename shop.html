@@ -93,40 +93,67 @@
 
         <!-- PRODUCT 01 -->
 
-        <article class="card">
+<article class="card">
 
-          <div class="product-image">
+  <div class="product-slider">
 
-            <span class="badge">
-              ONE OF ONE
-            </span>
+    <button class="slider-arrow prev" onclick="changeProductImage(-1)">
+      ‹
+    </button>
 
-            <img
-              src="assets/images/product1.jpg"
-              alt="Vintage Hoodie"
-            >
+    <img
+      id="product1-image"
+      src="assets/images/product1-1.png"
+      alt="Vintage Tigers Jersey"
+    >
 
-          </div>
+    <button class="slider-arrow next" onclick="changeProductImage(1)">
+      ›
+    </button>
 
-          <div class="product-info">
+  </div>
 
-            <div>
-              <p class="product-number">01</p>
-              <h3>Vintage Hoodie</h3>
-            </div>
+  <div class="slider-dots">
+    <span class="dot active" onclick="showProductImage(0)"></span>
+    <span class="dot" onclick="showProductImage(1)"></span>
+    <span class="dot" onclick="showProductImage(2)"></span>
+  </div>
 
-            <p class="price">
-              ₹999
-            </p>
 
-          </div>
+  <div class="product-info">
 
-          <a href="#" class="view-product">
-            VIEW PIECE →
-          </a>
+    <div>
+      <p class="product-number">01</p>
+      <h3>Vintage Tigers Jersey</h3>
+    </div>
 
-        </article>
+    <p class="price">₹200</p>
 
+  </div>
+
+
+  <div class="product-details">
+
+    <p>
+      Vintage-inspired black & white Tigers jersey featuring
+      classic vertical stripes, button-front design and bold
+      Tigers graphic.
+    </p>
+
+    <div class="details-list">
+      <span><strong>Size:</strong> L</span>
+      <span><strong>Condition:</strong> Pre-owned / vintage</span>
+      <span><strong>Availability:</strong> 1 of 1</span>
+    </div>
+
+  </div>
+
+
+  <a href="#" class="view-product">
+    VIEW PIECE →
+  </a>
+
+</article>
 
         <!-- PRODUCT 02 -->
 
